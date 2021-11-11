@@ -32,7 +32,7 @@ public class EmployeeServiceImpl implements EmployeeService{
         if(optional.isPresent()){
             employee = optional.get();
         }else{
-                throw new RuntimeException(" Employee not found for this id:: " + id);
+                throw new RuntimeException(" Employee was not found for this id:: " + id);
         }
         return employee;
     }
